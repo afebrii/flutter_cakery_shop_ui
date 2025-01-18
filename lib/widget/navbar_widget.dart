@@ -6,25 +6,28 @@ class NavbarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
+      height: 50,
+      padding: EdgeInsets.all(0),
       clipBehavior: Clip.antiAlias,
       shape: const CircularNotchedRectangle(),
       notchMargin: 8,
       color: Colors.transparent,
       elevation: 10,
       child: Container(
-        height: 50.0,
+        height: 50,
+        // width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(25.0),
-            topRight: Radius.circular(25.0),
+            topLeft: Radius.circular(25),
+            topRight: Radius.circular(25),
           ),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SizedBox(
-              height: 50.0,
+              height: 50,
               width: MediaQuery.of(context).size.width / 2 - 40.0,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
